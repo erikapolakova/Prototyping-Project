@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>CPH Marathon︱Info</title>
+    <link rel="icon" type="image/png" href="diabetofinal_outline.png">
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="javascript.js" defer></script>
+</head>
+
+<body class="background">
+     <header class="header">
+        <div>
+            <a href="home.html">
+                <img src="logo.png" alt="Logo" class="logo">
+            </a>
+        </div>
+
+        <div class="weather-widget">
+            <div>
+                <h2 class="weather-header">Copenhagen</h2>
+                <div class="weather-info">
+                    <div>10 m/s <br><b>Wind</b></div>
+                    <div>98% <br><b>Humidity</b></div>
+                    <div>100% <br><b>Rain</b></div>
+                </div>
+            </div>
+
+            <div class="weather-card-container">
+                <div class="weather-card">
+                    <p>Now</p>
+                    <img src="slniecko.svg" alt="sunny" class="weathericon">
+                    <p>16°C</p>
+                </div>
+                <div class="weather-card">
+                    <p>11:00</p>
+                    <img src="polooblacno.svg" alt="partly cloudy" class="weathericon">
+                    <p>16°C</p>
+                </div>
+                <div class="weather-card">
+                    <p>12:00</p>
+                    <img src="prsiprsilensaleje.svg" alt="rain" class="weathericon">
+                    <p>17°C</p>
+                </div>
+                <div class="weather-card">
+                    <p>13:00</p>
+                    <img src="hmlistymesiaciksoblacikom.svg" alt="sunny" class="weathericon">
+                    <p>-5°C</p>
+                </div>
+                <div class="weather-card">
+                    <p>14:00</p>
+                    <img src="slniecko.svg" alt="sunny" class="weathericon">
+                    <p>16°C</p>
+                </div>
+                <div class="weather-card">
+                    <p>15:00</p>
+                    <img src="mracik.svg" alt="mracik" class="weathericon">
+                    <p>17°C</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="info-container">
+
+            <button class="info-button" onclick="popUp(event, 'popup1')">
+            RESULTS
+            </button>
+        
+            <button class="info-button" onclick="popUp(event, 'popup2')">
+            SCHEDULE
+            </button>
+
+            <button class="info-button" onclick="popUp(event, 'popup3')">
+            CATEGORIES
+            </button>
+
+            <button class="info-button" onclick="popUp(event, 'popup4')">
+            TRANSPORT
+            </button>
+
+            
+            <button class="info-button" onclick="popUp(event, 'popup5')">
+            FAQ
+            </button>
+
+        </div>
+
+        <div class="popup-content" id="popup1"> 
+            <div class="info-overlay-heading">RESULTS</div>
+                <img src="info_popup_1.png">
+        </div>
+
+        <div class="popup-content" id="popup2"> 
+            <div class="info-overlay-heading">RESULTS</div>
+                <img src="info_popup_1.png">
+        </div>
+
+        <div class="popup-content" id="popup3"> 
+            <div class="info-overlay-heading">RESULTS</div>
+                <img src="schedule_popup.png">
+        </div>
+
+        <div class="popup-content" id="popup4"> 
+            <div class="info-overlay-heading">RESULTS</div>
+                <img src="transport_popup.png">
+        </div>
+
+        <div class="popup-content" id="popup5"> 
+            <div class="info-overlay-heading">RESULTS</div>
+                <img src="faq_popup.png">
+        </div>
+
+       
+    </main>
+
+    <footer class="bottom-bar">
+            <div class="bottom-menu">
+                <div class="menu-btn-0">
+                    <a href="home.html">
+                        <img src="home_icon.svg" alt="Home Page Icon" class="menu-icon-0">
+                    </a>
+                </div>
+
+                <div class="menu-btn-1">
+                    <a href="info.html">
+                        <img src="info_icon.svg" alt="Info Page Icon" class="menu-icon-1">
+                    </a>
+                </div>
+
+                <div class="menu-btn-0">
+                    <a href="map.html">
+                        <img src="map_icon.svg" alt="Map Page Icon" class="menu-icon-0">
+                    </a>
+                </div>
+
+                <div class="menu-btn-0">
+                    <a href="contactus.html">
+                        <img src="support_icon.svg" alt="Charities Page Icon" class="menu-icon-0">
+                    </a>
+                </div>
+
+                <div class="menu-btn-0">
+                    <a href="merch.html">
+                        <img src="merch_icon.svg" alt="Merch Page Icon" class="menu-icon-0">
+                    </a>
+                </div>
+
+                <div class="menu-btn-0">
+                    <a href="charities.html">
+                        <img src="charity_icon.svg" alt="Charity Page Icon" class="menu-icon-0">
+                    </a>
+                </div>
+
+
+            </div>
+            <button class="back-btn" onclick="history.back()">
+            BACK
+            </button>
+        </footer>
+
+</body>
+
+</html>

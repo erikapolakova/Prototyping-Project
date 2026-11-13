@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>CPH Marathon︱Home</title>
+    <link rel="icon" type="image/png" href="diabetofinal_outline.png">
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="javascript.js" defer></script>
+</head>
+
+<body onload="startTime()" class="background">
+    <!-- Header / Weather Bar -->
+    <header class="header">
+        <div>
+            <a href="index.html">
+                <img src="logo.png" alt="Logo" class="logo">
+            </a>
+        </div>
+
+        <div class="weather-widget">
+            <div>
+                <h2 class="weather-header">Copenhagen</h2>
+                <div class="weather-info">
+                    <div>10 m/s <br><b>Wind</b></div>
+                    <div>98% <br><b>Humidity</b></div>
+                    <div>100% <br><b>Rain</b></div>
+                </div>
+            </div>
+
+            <div class="weather-card-container">
+                <div class="weather-card">
+                    <p>Now</p>
+                    <img src="slniecko.svg" alt="sunny" class="weathericon">
+                    <p>16°C</p>
+                </div>
+                <div class="weather-card">
+                    <p>11:00</p>
+                    <img src="polooblacno.svg" alt="partly cloudy" class="weathericon">
+                    <p>16°C</p>
+                </div>
+                <div class="weather-card">
+                    <p>12:00</p>
+                    <img src="prsiprsilensaleje.svg" alt="rain" class="weathericon">
+                    <p>17°C</p>
+                </div>
+                <div class="weather-card">
+                    <p>13:00</p>
+                    <img src="hmlistymesiaciksoblacikom.svg" alt="sunny" class="weathericon">
+                    <p>-5°C</p>
+                </div>
+                <div class="weather-card">
+                    <p>14:00</p>
+                    <img src="slniecko.svg" alt="sunny" class="weathericon">
+                    <p>16°C</p>
+                </div>
+                <div class="weather-card">
+                    <p>15:00</p>
+                    <img src="mracik.svg" alt="mracik" class="weathericon">
+                    <p>17°C</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+   <div class="cards-container">
+
+    <!-- charity -->
+        <div class="card side left">
+            <img class="card-image" src="images/charity.JPG">
+
+            <div class="card-content">
+                <img class="card-logo" src="images/charityLogo.png">
+
+                <h2>CHARITY</h2>
+                <p>Donate to the impaired and impoverished. More info here...</p>
+                <a href="charities.html"><button class="navigate">Navigate →</button></a>
+            </div>
+        </div>
+
+        <!-- merch -->
+        <div class="card side2 left1">
+            <img class="card-image" src="images/merch.png">
+
+            <div class="card-content">
+                <img class="card-logo" src="images/merchLogo.png">
+
+                <h2>MERCH</h2>
+                <p>Check out our merch items and locations around the event.</p>
+                <a href="merch.html"><button class="navigate">Navigate →</button></a>
+            </div>
+        </div>
+
+        <!-- support -->
+        <div class="card side right">
+            <img class="card-image" src="images/support.avif">
+
+            <div class="card-content">
+                <img class="card-logo" src="images/supportLogo.png">
+
+                <h2>SUPPORT</h2>
+                <p>Is something on your mind? You can reach out to us here if you ran into an issue</p>
+                <a href="contactus.html"><button class="navigate">Navigate →</button></a>
+            </div>
+        </div>
+
+        <!-- info -->
+        <div class="card side2 right1">
+            <img class="card-image" src="images/info.jpeg">
+
+            <div class="card-content">
+                <img class="card-logo" src="images/infoLogo.png">
+
+                <h2>INFO</h2>
+                <p>Read about schedule, results, categories, transport and more...</p>
+                <a href="info.html"><button class="navigate">Navigate →</button></a>
+            </div>
+        </div>
+
+        <!-- map -->
+        <div class="card main">
+            <img class="card-image" src="images/map.png">
+
+            <div class="card-content">
+                <img class="card-logo" src="images/mapLogo.png">
+
+                <h1>MAP</h1>
+                <p>Navigate around the city and search for various points of interest.</p>
+                <a href="map.html"><button class="navigate">Navigate →</button></a>
+            </div>
+        </div>
+
+    </div>
+
+<button class="arrow arrow-left" onclick="changeCard(-1)">◀</button>
+
+<button class="arrow arrow-right" onclick="changeCard(1)">▶</button>
+
+<div id="txt" class="clock-widget-home"></div>
+
+    <footer>
+        <div class="tracker">
+            <a href="map.html">
+            <img src="map.png" alt="tracker map" class="trackermap">
+            </a>
+
+            <div class="runners">
+                <button class="searchbar" onclick="popUp(event, 'popup1')">
+                        <img src="searchicon.svg" alt="search icon" class="search-icon">
+                        <p>search for runner...</p>
+                </button>
+                <div>
+                    <div class="runner">
+                        <img src="pfp1.png" alt="profile pic" class="pfp">
+                        <p><b>#384</b></p>
+                        <p>Mike Hawk</p>
+                    </div>
+                    <div class="runner">
+                        <img src="pfp2.png" alt="profile pic" class="pfp">
+                        <p><b>#483</b></p>
+                        <p>Hike Mawk</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-content" id="popup1"> 
+        <div class="popup-heading">Participant Tracker</div>
+        <img src="map_light.png" alt="Marathon Route Map" class="map-tracker">
+        <div class="searchbar2">
+            <img src="searchicon.svg" alt="search icon" class="search-icon">
+            search runner name or bib number...
+        </div>
+        <img src="keyboard.png" alt="Marathon Route Map" class="map-tracker">
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

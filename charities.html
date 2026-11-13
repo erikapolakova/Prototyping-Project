@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>CPH Marathon︱Charities</title>
+    <link rel="icon" type="image/png" href="diabetofinal_outline.png">
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="javascript.js" defer></script>
+</head>
+
+<body class="background">
+     <header class="header">
+        <div>
+            <a href="home.html">
+                <img src="logo.png" alt="Logo" class="logo">
+            </a>
+        </div>
+
+        <div class="weather-widget">
+            <div>
+                <h2 class="weather-header">Copenhagen</h2>
+                <div class="weather-info">
+                    <div>10 m/s <br><b>Wind</b></div>
+                    <div>98% <br><b>Humidity</b></div>
+                    <div>100% <br><b>Rain</b></div>
+                </div>
+            </div>
+
+            <div class="weather-card-container">
+                <div class="weather-card">
+                    <p>Now</p>
+                    <img src="slniecko.svg" alt="sunny" class="weathericon">
+                    <p>16°C</p>
+                </div>
+                <div class="weather-card">
+                    <p>11:00</p>
+                    <img src="polooblacno.svg" alt="partly cloudy" class="weathericon">
+                    <p>16°C</p>
+                </div>
+                <div class="weather-card">
+                    <p>12:00</p>
+                    <img src="prsiprsilensaleje.svg" alt="rain" class="weathericon">
+                    <p>17°C</p>
+                </div>
+                <div class="weather-card">
+                    <p>13:00</p>
+                    <img src="hmlistymesiaciksoblacikom.svg" alt="sunny" class="weathericon">
+                    <p>-5°C</p>
+                </div>
+                <div class="weather-card">
+                    <p>14:00</p>
+                    <img src="slniecko.svg" alt="sunny" class="weathericon">
+                    <p>16°C</p>
+                </div>
+                <div class="weather-card">
+                    <p>15:00</p>
+                    <img src="mracik.svg" alt="mracik" class="weathericon">
+                    <p>17°C</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+    
+    <div class="popup-container">
+
+        <button class="popup-button" onclick="popUp(event, 'popup1')">
+            <div class="char-thumbnail-container">
+                <img src="wwcrpic.png" alt="Worldwide Cancer Research Charity Running Group" class="charity-small-image">
+            </div>
+            
+            <p class="chartext2">WORLDWIDE CANCER<br>RESEARCH</p>
+        </button>
+     
+        <button class="popup-button" onclick="popUp(event, 'popup2')">
+            <div class="char-thumbnail-container">
+                <img src="psyk.png" alt="Psykiatrifonden Charity Run Group" class="charity-small-image">
+            </div>
+            
+            <p class="chartext">PSYKIATRIFONDEN</p>
+        </button>
+
+        <button class="popup-button" onclick="popUp(event, 'popup3')">
+            <div class="char-thumbnail-container">
+                <img src="localsports.png" alt="Local Sports Clubs via Sparta Charity Run" class="charity-small-image">
+            </div>
+        
+            <p class="chartext2">LOCAL SPORTS<br>CLUBS VIA SPARTA</p>
+        </button>
+
+        <button class="popup-button" onclick="popUp(event, 'popup4')">
+            <div class="char-thumbnail-container">
+                <img src="makeawish.png" alt="Make a Wish Foundation Charity Run" class="charity-small-image">
+            </div>
+            
+            <p class="chartext">MAKE-A-WISH FOUNDATION</p>
+        </button>
+
+           
+        <button class="popup-button" onclick="popUp(event, 'popup5')">
+            <div class="char-thumbnail-container">
+                <img src="activeminds.png" alt="Active Minds Charity Athlete" class="charity-small-image">
+            </div>
+            
+            <p class="chartext">ACTIVE MINDS</p>
+        </button>
+
+        <button class="popup-button" onclick="popUp(event, 'popup6')">
+            <div class="char-thumbnail-container">
+                <img src="downsyndrome.png" alt="National Down Syndrome Society Charity Run Starting Line" class="charity-small-image">
+            </div>
+            
+            <p class="chartext2">NATIONAL DOWN<br>SYNDROME SOCIETY</p>
+        </button>
+
+    </div>
+
+   
+
+    <div class="popup-content" id="popup1"> 
+        <div class="popup-heading">Worldwide Cancer Research</div>
+        <img src="wwcrpic.png" alt="Worldwide Cancer Research Charity Running Group" class="charitypopupimg">
+
+        <div class="popup-info">
+            <div class="popup-article"> We are proud to support Worldwide Cancer Research at the Copenhagen Marathon. Every step taken helps fund lifesaving research projects around the globe.</div>
+            <div class="popup-stat2">
+                <p>SCAN QR TO DONATE</p>
+                <img src="psykiatrifonden.png" alt="Donation QR Code" class="charity-qr">
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-content" id="popup2"> 
+        <div class="popup-heading">Psykiatrifonden</div>
+        <img src="psyk.png" alt="Psykiatrifonden Charity Run Group" class="charitypopupimg">
+
+        <div class="popup-info">
+            <div class="popup-article"> Running for mental health awareness. Psykiatrifonden supports better psychiatric care, reduces stigma, and helps create open conversations about mental well-being.</div>
+            <div class="popup-stat2">
+                <p>SCAN QR TO DONATE</p>
+                <img src="psykiatrifonden.png" alt="Donation QR Code" class="charity-qr">
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-content" id="popup3"> 
+        <div class="popup-heading">Local Sports Clubs via Sparta</div>
+        <img src="localsports.png" alt="Local Sports Clubs via Sparta Charity Run" class="charitypopupimg">
+                
+        <div class="popup-info">
+            <div class="popup-article"> Empowering local youth and community sports. Your support helps provide equipment, facilities, and opportunities for children to stay active.</div>
+            <div class="popup-stat2">
+                <p>SCAN QR TO DONATE</p>
+                <img src="psykiatrifonden.png" alt="Donation QR Code" class="charity-qr">
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-content" id="popup4"> 
+        <div class="popup-heading">Make-A-Wish Foundation</div>
+        <img src="makeawish.png" alt="Make a Wish Foundation Charity Run" class="charitypopupimg">
+                
+        <div class="popup-info">
+            <div class="popup-article"> Creating life-changing wishes for children with critical illnesses. Every donation brings strength, joy, and hope to children and families when they need it most.</div>
+            <div class="popup-stat2">
+                <p>SCAN QR TO DONATE</p>
+                <img src="psykiatrifonden.png" alt="Donation QR Code" class="charity-qr">
+            </div>
+        </div>
+    </div>
+            
+
+    <div class="popup-content" id="popup5"> 
+        <div class="popup-heading">Active Minds</div>
+        <img src="activeminds.png" alt="Active Minds Charity Athlete" class="charitypopupimg">
+                
+        <div class="popup-info">
+            <div class="popup-article"> Changing the conversation about mental health. Active Minds empowers students and young adults to speak openly, seek help, and support one another.</div>
+            <div class="popup-stat2">
+                <p>SCAN QR TO DONATE</p>
+                <img src="psykiatrifonden.png" alt="Donation QR Code" class="charity-qr">
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-content" id="popup6"> 
+        <div class="popup-heading">National Down Syndrome Society</div>
+        <img src="downsyndrome.png" alt="National Down Syndrome Society Charity Run Starting Line" class="charitypopupimg">
+                
+        <div class="popup-info">
+            <div class="popup-article"> Supporting individuals with Down syndrome and their families. We advocate for inclusion, acceptance, and equal opportunities.</div>
+            <div class="popup-stat2">
+                <p>SCAN QR TO DONATE</p>
+                <img src="psykiatrifonden.png" alt="Donation QR Code" class="charity-qr">
+            </div>
+        </div>
+    </div>
+
+    </main>
+
+    <footer class="bottom-bar">
+        <div class="bottom-menu">
+            <div class="menu-btn-0">
+                <a href="home.html">
+                    <img src="home_icon.svg" alt="Home Page Icon" class="menu-icon-0">
+                </a>
+            </div>
+
+            <div class="menu-btn-0">
+                <a href="info.html">
+                    <img src="info_icon.svg" alt="Info Page Icon" class="menu-icon-0">
+                </a>
+            </div>
+
+            <div class="menu-btn-0">
+                <a href="map.html">
+                    <img src="map_icon.svg" alt="Map Page Icon" class="menu-icon-0">
+                </a>
+            </div>
+
+            <div class="menu-btn-0">
+                <a href="contactus.html">
+                    <img src="support_icon.svg" alt="Charities Page Icon" class="menu-icon-0">
+                </a>
+            </div>
+
+            <div class="menu-btn-0">
+                <a href="merch.html">
+                    <img src="merch_icon.svg" alt="Merch Page Icon" class="menu-icon-0">
+                </a>
+            </div>
+
+            <div class="menu-btn-1">
+                <a href="charities.html">
+                    <img src="charity_icon.svg" alt="Charity Page Icon" class="menu-icon-1">
+                </a>
+            </div>
+
+
+        </div>
+        <button class="back-btn" onclick="history.back()">
+        BACK
+        </button>
+    </footer>
+</body>
+
+</html>
